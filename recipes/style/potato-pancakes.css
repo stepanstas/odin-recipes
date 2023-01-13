@@ -72,8 +72,10 @@ section > p {
 
 section ul,
 section ol {
-    margin-left: 1.25rem;
+    list-style-position: inside;
     line-height: 1.25rem;
+    margin-left: 1.125rem;
+    text-indent: -1.125rem;
 }
 
 section li:not(:last-of-type) {
