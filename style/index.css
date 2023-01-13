@@ -1,0 +1,40 @@
+html {
+    font-family: Helvetica, Helvetica sans-serif;
+    font-size: 100%;
+    box-sizing: border-box;
+}
+
+*,
+::before,
+::after {
+    box-sizing: inherit;
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    font-size: 1rem;
+    color: #595959;
+    width: 100%;
+    margin: 0 auto;
+    padding: 2rem;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+    cursor: pointer;
+    transition: all 0.2s ease-in-out;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+.container-recipes {
+    display: flex;
+    flex-flow: column wrap;
+    justify-content: flex-start;
+    align-items: stretch;
+    gap: 1rem;
+}
