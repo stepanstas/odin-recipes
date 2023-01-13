@@ -38,3 +38,9 @@ a:hover {
     align-items: stretch;
     gap: 1rem;
 }
+
+@media (max-width: 601px) {
+    body {
+        padding: 1rem;
+    }
+}
