@@ -13,34 +13,94 @@ html {
 }
 
 body {
+    display: flex;
+    flex-flow: column wrap;
+    justify-content: center;
+    align-items: center;
     font-size: 1rem;
     color: #595959;
     width: 100%;
+    min-height: 100vh;
     margin: 0 auto;
     padding: 2rem;
 }
 
+.container-recipes {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: flex-start;
+    align-items: center;
+    text-align: center;
+    margin: auto;
+    gap: 1rem;
+}
+
+.container-recipes h1 {
+    width: 100%;
+}
+
 a {
+    display: flex;
+    flex-flow: column wrap;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+    padding: 1rem;
+    border: 2px solid #f5f5f5;
+    background-color: #fff;
+    text-align: center;
     text-decoration: none;
     color: inherit;
     cursor: pointer;
     transition: all 0.2s ease-in-out;
+    flex: 1 1 30%;
+    height: 200px;
 }
 
-a:hover {
-    text-decoration: underline;
+a:hover,
+a:focus {
+    background-color: #f5f5f5;
 }
 
-.container-recipes {
-    display: flex;
-    flex-flow: column wrap;
-    justify-content: flex-start;
-    align-items: stretch;
-    gap: 1rem;
+.icon-potato::after {
+    content: "🥔";
+    font-size: 2rem;
+}
+
+.icon-steak::after {
+    content: "🥩";
+    font-size: 2rem;
+}
+
+.icon-ice-cream::after {
+    content: "🍨";
+    font-size: 2rem;
 }
 
 @media (max-width: 601px) {
     body {
         padding: 1rem;
+    }
+}
+
+@media (max-width: 501px) {
+    .container-recipes {
+        width: 100%;
+        flex-flow: column wrap;
+    }
+
+    a {
+        width: 100%;
+    }
+}
+
+@media (max-width: 301px) {
+
+    .container-recipes h1 {
+        font-size: 1.75rem;
+    }
+
+    a h2 {
+        font-size: 1rem;
     }
 }
