@@ -1,5 +1,6 @@
 # odin-recipes
 ## Recipes assignment for The Odin Project
+https://www.theodinproject.com/lessons/foundations-recipes
 ___
 ### Project description:
 Basic recipe website consisting of a main index page with links to three recipes...
